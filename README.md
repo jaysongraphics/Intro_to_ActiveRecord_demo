@@ -28,16 +28,16 @@ class CreateTickets < ActiveRecord::Migration[6.1]
 end
 ```
 
-4. Create a table for each migration with create_table. Tickets should have the following columns and data-types : name:string and price:float. Movies should have the following columns and data-types: title:string, director:string, description:string, showing:boolean. 
+ Create a table for each migration with create_table. Tickets should have the following columns and data-types : name: string,  price: float and movie_id: integer. Movies should have the following columns and data-types: title: string, director: string, description: string, showing: boolean. 
 
 
- 5. run `bundle exec rake db:migrate` to migrate your tables. Verify the schema.rb was created correctly.
+ 4. run `bundle exec rake db:migrate` to migrate your tables. Verify the schema.rb was created correctly.
  
 
- 6. Inside of `app/models` there are two files. Create a `Ticket` model and `Movie` model using these files.
+ 5. Inside of `app/models` there are two files. Create a `Ticket` model and `Movie` model using these files.
 >Note: They should both inherit from ActiveRecord::Base
 
- 7. Test out your active record commands in your console. run `rake console` with the following:
+ 6. Test out your active record commands in your console. run `rake console` with the following:
   - create an instance of ticket or movie and save it to a variable
   - save the instance of ticket or movie to the database 
   - use a command that creates an instance and saves it to the database at the same time.
